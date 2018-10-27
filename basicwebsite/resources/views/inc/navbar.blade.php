@@ -6,13 +6,13 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item {{Request::is('/') ? 'active' : ''}}">
         <a class="nav-link" href="/traversy_tutorials/basicwebsite/public/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item {{Request::is('about') ? 'active' : ''}}">
         <a class="nav-link" href="/traversy_tutorials/basicwebsite/public/about">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item {{Request::is('contact') ? 'active' : ''}}">
         <a class="nav-link" href="/traversy_tutorials/basicwebsite/public/contact">Contact</a>
       </li>
     </ul>
