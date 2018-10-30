@@ -5,7 +5,7 @@ use App\Contact;
 
 Route::group(['middleware' => 'api'], function() {
     // Fetch contacts
-    Route::get('contact', function() {
+    Route::get('contacts', function() {
         return Contact::latest()->orderBy('create_at', 'desc')->get();
     });
 
